@@ -1,0 +1,73 @@
+#+AUTHOR: YuuhiK
+#+TITLE: EOPLを読む
+#+LANGUAGE: ja
+#+HTML: <meta content='no-cache' http-equiv='Pragma' />
+#+STYLE: <link rel="stylesheet" type="text/css" href="./main.css">
+#+STYLE: <link rel="stylesheet" type="text/css" href="./org-mode.css">
+
+#+begin_html
+<script src="./jquery-1.6.2.min.js" type="text/javascript"></script>
+<script src="./chpter2.js" type="text/javascript"></script>
+
+<script src="./jquery.terminal-0.3.6.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./jquery.terminal.css" />
+
+<script type="text/javascript">
+jQuery(function($, undefined) {
+$('#term_demo').terminal(function(command, term) {
+
+result = window.eval('"let x = 1 in if zero?(x) then 123 else 789"');
+if (result != undefined) {
+term.echo(String(result));
+}
+
+result = window.eval('a = f.scaner("let x = 1 in if zero?(x) then 123 else 789")');
+if (result != undefined) {
+term.echo(String(result));
+}
+result = window.eval('b = f.parser(a)');
+if (result != undefined) {
+term.echo(String(result));
+}
+result = window.eval('f.printTokens(a)');
+if (result != undefined) {
+term.echo(String(result));
+}
+result = window.eval('f.printTree(b)');
+      if (result != undefined) {
+term.echo(String(result));
+}
+result = window.eval('f.run("let x = 1 in if zero?(x) then x else 789")');
+if (result != undefined) {
+term.echo(String(result));
+}
+
+<!--       var result = window.eval(command); -->
+<!--       if (result != undefined) { -->
+<!--       term.echo(String(result)); -->
+<!--       } -->
+
+
+}, {
+greetings: 'EOPL Test',
+name: 'js_demo',
+height: 400,
+prompt: 'js>'});
+});
+</script>
+#+end_html
+
+* このページについて
+jquery.terminal.cssを使っている．
+キーボードのショートカットが使えなくなるため，やりづらい．
+要修正．
+
+* Terminal
+#+begin_html
+<div id="content">
+<div id="term_demo"></div>
+</div>
+#+end_html
+
+
+
