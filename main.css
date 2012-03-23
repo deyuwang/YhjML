@@ -2,6 +2,13 @@
 
 div#content {
     /* height: 300px; */
-    margin: 0.1em 10% 0.5em 1.5em;
+     /* margin: 0.1em 1em 0.5em 1.5em; */
 }
+
+textarea#script {
+    margin: 1.5em 1em 1em 1em;
+    rows: 10;
+    cols: 80;
+}
+
 

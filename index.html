@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="EOPLを読む"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2012-03-18 06:05:41 JST"/>
+<meta name="generated" content="2012-03-24 05:01:45 JST"/>
 <meta name="author" content="YuuhiK"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -104,48 +104,7 @@
 <script src="./jquery.terminal-0.3.6.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="./jquery.terminal.css" />
 
-<script type="text/javascript">
-jQuery(function($, undefined) {
-$('#term_demo').terminal(function(command, term) {
-
-result = window.eval('"let x = 1 in if zero?(x) then 123 else 789"');
-if (result != undefined) {
-term.echo(String(result));
-}
-
-result = window.eval('a = f.scaner("let x = 1 in if zero?(x) then 123 else 789")');
-if (result != undefined) {
-term.echo(String(result));
-}
-result = window.eval('b = f.parser(a)');
-if (result != undefined) {
-term.echo(String(result));
-}
-result = window.eval('f.printTokens(a)');
-if (result != undefined) {
-term.echo(String(result));
-}
-result = window.eval('f.printTree(b)');
-      if (result != undefined) {
-term.echo(String(result));
-}
-result = window.eval('f.run("let x = 1 in if zero?(x) then x else 789")');
-if (result != undefined) {
-term.echo(String(result));
-}
-
-<!--       var result = window.eval(command); -->
-<!--       if (result != undefined) { -->
-<!--       term.echo(String(result)); -->
-<!--       } -->
-
-
-}, {
-greetings: 'EOPL Test',
-name: 'js_demo',
-height: 400,
-prompt: 'js>'});
-});
+<script type="text/javascript" src="./main.js">
 </script>
 
 
@@ -180,6 +139,10 @@ prompt: 'js>'});
 <div id="term_demo"></div>
 </div>
 
+<pre class="example" id="script1">
+let x = 1 in if zero?(x) then 100 else 999
+</pre>
+
 
 
 </div>
@@ -187,7 +150,7 @@ prompt: 'js>'});
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2012-03-18 06:05:41 JST</p>
+<p class="date">Date: 2012-03-24 05:01:45 JST</p>
 <p class="author">Author: YuuhiK</p>
 <p class="creator">Org version 7.8.03 with Emacs version 23</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

@@ -36,17 +36,19 @@ h1.title {
 }
 
 /* 目次 */
-div#table-of-contents h2 {
-    display: none; /* 消す */
-}
+/* div#table-of-contents h2 { */
+/*     display: none; /\* 消す *\/ */
+/* } */
 div#table-of-contents {
-    margin: 0.1em 30% 0.5em 1.5em;
+    display: none; /* 消す */
+    /* margin: 0.1em 30% 0.5em 1.5em; */
 }
-div#text-table-of-contents {
-    background-color: #c0c0c0;
-    padding: 0.1em;
-    border: 1px dotted black;
-}
+/* div#text-table-of-contents { */
+/*     display: none; /\* 消す *\/ */
+/*     background-color: #c0c0c0; */
+/*     padding: 0.1em; */
+/*     border: 1px dotted black; */
+/* } */
 
 /* 見出し */
 h2, h3, h4, h5, h6 {

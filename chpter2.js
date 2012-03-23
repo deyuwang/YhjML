@@ -30,7 +30,7 @@ Array.prototype.mkArrayPart = function(str1, str2) {
     return ary;
 };
 
-var f = (
+var YhjML = (
     function() {
 	// Top Level Object
 	const COMMENT = 'comment';
@@ -48,7 +48,7 @@ var f = (
 
 	var clone = function(obj) {
 	    var f = function() {};
-	    f.prototype = obj;
+	    YhjML.prototype = obj;
 	    return new f;
 	};
 

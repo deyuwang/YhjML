@@ -27,7 +27,7 @@
     color: #aaa;
 /*     background-color: #000; */
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 12px;
+    font-size: 15px;
 /*     font-size : 18px; */
 }
 
@@ -35,18 +35,18 @@
     float: left;
 }
 .terminal div::selection, .terminal span::selection {
-/*     background-color: #aaa; */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #aaa;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     color: #000;
 }
 .terminal .cmd span.inverted {
-/*     background-color: #aaa; */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #aaa;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     color: #000;
 }
 .terminal div::-moz-selection, .terminal span::-moz-selection {
-/*     background-color: #aaa; */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #aaa;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     color: #000;
 }
 
